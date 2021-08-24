@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- foonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <!-- foonts -->
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>Визовый центр КОСМОПОЛИТ</title>
+</head>
+
+<body>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header position-relative d-flex justify-content-center align-items-center flex-column">
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <h1 class="title-medium title-modal mt-5 mb-3">Оформите заявку</h1>
+                    <p class="modal-text text-dark text-center mb-4">Для сотрудничества с нами
+                        оставьте свои данные.</p>
+    
+                    <form action="">
+                        <input class="modal-input mb-2 text-center" type="text" placeholder="Ваше имя">
+                        <input class="modal-input mb-2 text-center" type="tel" placeholder="Телефон">
+                        <button class="btn-general btn-modal mb-2">Подать заявку</button>
+                        <p class="modal-info text-dark text-center mb-4">Нажимая кнопку “Заполнить заявку” вы соглашаетесь
+                            с Политикой конфеденциальности нашей компании</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal-thanks d-flex justify-content-center flex-column align-items-center"
+        style="display: none !important;">
+        <div class="modal-block h-100 w-100 d-flex justify-content-center align-items-center flex-column position-relative">
+            <img class="closed position-absolute" src="img/closed.png" alt="">
+            <img class="complite mt-5" src="img/complite.png" alt="">
+            <h1 class="title-medium text-center title-modal mt-3 mb-3">Заявка <br> отправлена!</h1>
+            <p class="modal-text text-dark text-center mb-5">Наш менеджер свяжется
+                с вами в ближайшее время</p>
+        </div>
+    </div>
+    
+    <!-- data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop" -->
+    <section class="general">
+    
+        <div class="navigation">
+            <div class="container">
+                <div
+                    class="navigation-block d-flex align-items-center justify-content-md-between justify-content-center flex-md-row flex-column">
+                    <img class="logo" src="img/logo.png" alt="">
+                    <p class="nav-text text-center mb-md-0 mb-3">Визовый центр в СПБ <br>
+                        Оформление виз в любую страну от 2300 руб за 3 дня</p>
+                    <div class="button-fast d-flex flex-column align-items-center">
+                        <p class="btn-text mb-2">Не хочу ничего заполнять</p>
+                        <button class="btn-nav" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Дайте визу</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="content position-relative">
+    
+            <div class="content-quiz" style="display: none;">
+                <div class="container">
+                    <div
+                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
+    
+                        <h1 class="title-medium">Рассчитать стоимость <br>
+                            СО СКИДКОЙ</h1>
+    
+                        <form class="form-block" action="">
+                            <p class="form-text">Выберите страну</p>
+    
+                            <div class="select-block">
+                                <select class="select-general" name="" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+    
+                                <div class="select is-active">
+    
+                                    <div class="select__header">
+                                        <span class="select__current text-decoration-underline">Весь мир</span>
+                                        <div class="select__icon"><img src="img/figure.png" alt=""></div>
+                                    </div>
+    
+                                    <div class="select__body">
+                                        <div class="select__item d-flex align-items-center col-5">
+                                            <img class="select__item--img" src="img/side-1.png" alt="">
+                                            <p class="select__item--text ms-2">Болгария</p>
+                                        </div>
+                                        <div class="select__item d-flex align-items-center col-5">
+                                            <img class="select__item--img" src="img/side-2.png" alt="">
+                                            <p class="select__item--text ms-2">Испания</p>
+                                        </div>
+                                        <div class="select__item d-flex align-items-center col-5">
+                                            <img class="select__item--img" src="img/side-3.png" alt="">
+                                            <p class="select__item--text ms-2">Польша</p>
+                                        </div>
+                                        <div class="select__item d-flex align-items-center col-5">
+                                            <img class="select__item--img" src="img/side-4.png" alt="">
+                                            <p class="select__item--text ms-2">Эстония</p>
+                                        </div>
+                                        <div class="select__item d-flex align-items-center col-7">
+                                            <img class="select__item--img" src="img/side-5.png" alt="">
+                                            <p class="select__item--text ms-2">Греция</p>
+                                        </div>
+                                        <div class="select__item d-flex align-items-center col-7">
+                                            <img class="select__item--img" src="img/side-6.png" alt="">
+                                            <p class="select__item--text ms-2">Италия</p>
+                                        </div>
+                                        <div class="select__item d-flex align-items-center col-7">
+                                            <img class="select__item--img" src="img/side-7.png" alt="">
+                                            <p class="select__item--text ms-2">Хорватия</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="btn-quiz btn-quiz-1">
+                                <button class="btn-general">Далее</button>
+                            </div>
+    
+                            <div class="quiz-active">
+                                <div class="quiz-active-element quiz-active-element__big"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+    
+                            </div>
+                        </form>
+                        <img class="quiz-img-1 position-absolute" src="img/quiz-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content-quiz" style="display: none;">
+                <div class="container">
+                    <div
+                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
+    
+                        <form class="form-block" action="">
+                            <p class="form-text">Цель вашей поездки?</p>
+    
+                            <div class="select-block">
+                                <select class="select-general" name="" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+    
+                                <div class="select is-active">
+    
+                                    <div class="select__header">
+                                        <span class="select__current text-decoration-underline">Выберите цель</span>
+                                        <div class="select__icon"><img src="img/figure.png" alt=""></div>
+                                    </div>
+    
+                                    <div class="select__body">
+                                        <div class="select__item d-flex align-items-center col-6">
+                                            <img class="select__item--img select__item--img-2" src="img/goal-1.png" alt="">
+                                            <p class="select__item--text ms-2">Туристическая</p>
+                                        </div>
+                                        <div class="select__item d-flex align-items-center col-6">
+                                            <img class="select__item--img select__item--img-2" src="img/goal-2.png" alt="">
+                                            <p class="select__item--text ms-2">Гостевая</p>
+                                        </div>
+                                        <div class="select__item d-flex align-items-center col-6">
+                                            <img class="select__item--img select__item--img-2" src="img/goal-3.png" alt="">
+                                            <p class="select__item--text ms-2">Рабочая/Деловая</p>
+                                        </div>
+                                        <div class="select__item d-flex align-items-center col-6">
+                                            <img class="select__item--img select__item--img-2" src="img/goal-4.png" alt="">
+                                            <p class="select__item--text ms-2">Транзитная</p>
+                                        </div>
+                                        <div class="select__item d-flex align-items-center col-6">
+                                            <img class="select__item--img select__item--img-2" src="img/goal-5.png" alt="">
+                                            <p class="select__item--text ms-2">Переезд на ПМЖ</p>
+                                        </div>
+                                        <div class="select__item d-flex align-items-center col-6">
+                                            <img class="select__item--img select__item--img-2" src="img/goal-6.png" alt="">
+                                            <p class="select__item--text ms-2">Студенческая</p>
+                                        </div>
+                                        <div class="select__item d-flex align-items-center col-6">
+                                            <img class="select__item--img select__item--img-2" src="img/goal-7.png" alt="">
+                                            <p class="select__item--text ms-2">Другая</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="btn-quiz btn-quiz-1">
+                                <button class="btn-general">Далее</button>
+                            </div>
+    
+                            <div class="quiz-active">
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element quiz-active-element__big"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+    
+                            </div>
+                        </form>
+                        <img class="quiz-img-1 position-absolute" src="img/quiz-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content-quiz" style="display: none;">
+                <div class="container">
+                    <div
+                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
+    
+                        <form class="form-block" action="">
+                            <p class="form-text">Открывали вы ранее визы?</p>
+    
+                            <div class="label d-flex">
+                                <label class="label-quiz" for="name">
+                                    <input class="label-input position-absolute" name="name" type="radio">
+                                    <p class="label-text">Да</p>
+                                </label>
+    
+                                <label class="label-quiz" for="name">
+                                    <input class="label-input position-absolute" name="name" type="radio">
+                                    <p class="label-text">Нет</p>
+                                </label>
+                            </div>
+    
+                            <div class="btn-quiz">
+                                <button class="btn-back">Назад</button>
+                                <button class="btn-general">Далее</button>
+                            </div>
+    
+                            <div class="quiz-active">
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element quiz-active-element__big"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+    
+                            </div>
+                        </form>
+                        <img class="quiz-img-1 position-absolute" src="img/quiz-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content-quiz" style="display: none;">
+                <div class="container">
+                    <div
+                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
+    
+                        <form class="form-block" action="">
+                            <p class="form-text">Купили авиабилеты?</p>
+    
+                            <div class="label d-flex">
+                                <label class="label-quiz" for="name">
+                                    <input class="label-input position-absolute" name="name" type="radio">
+                                    <p class="label-text">Да</p>
+                                </label>
+    
+                                <label class="label-quiz" for="name">
+                                    <input class="label-input position-absolute" name="name" type="radio">
+                                    <p class="label-text">Нет</p>
+                                </label>
+                            </div>
+    
+                            <div class="btn-quiz">
+                                <button class="btn-back">Назад</button>
+                                <button class="btn-general">Далее</button>
+                            </div>
+    
+                            <div class="quiz-active">
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element quiz-active-element__big"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+    
+                            </div>
+                        </form>
+                        <img class="quiz-img-1 position-absolute" src="img/quiz-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content-quiz" style="display: none;">
+                <div class="container">
+                    <div
+                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
+    
+                        <form class="form-block" action="">
+                            <p class="form-text">Забронировали отель?</p>
+    
+                            <div class="label d-flex">
+                                <label class="label-quiz" for="name">
+                                    <input class="label-input position-absolute" name="name" type="radio">
+                                    <p class="label-text">Да</p>
+                                </label>
+    
+                                <label class="label-quiz" for="name">
+                                    <input class="label-input position-absolute" name="name" type="radio">
+                                    <p class="label-text">Нет</p>
+                                </label>
+                            </div>
+    
+                            <div class="btn-quiz">
+                                <button class="btn-back">Назад</button>
+                                <button class="btn-general">Далее</button>
+                            </div>
+    
+                            <div class="quiz-active">
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element quiz-active-element__big"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+    
+                            </div>
+                        </form>
+                        <img class="quiz-img-1 position-absolute" src="img/quiz-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content-quiz" style="display: none;">
+                <div class="container">
+                    <div
+                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
+    
+                        <form class="form-block" action="">
+                            <p class="form-text">Какой бонус хотите получить?</p>
+    
+                            <div class="label d-flex">
+                                <label class="label-quiz" for="name">
+                                    <input class="label-input position-absolute" name="name" type="radio">
+                                    <p class="label-text">Подарок</p>
+                                </label>
+    
+                                <label class="label-quiz" for="name">
+                                    <input class="label-input position-absolute" name="name" type="radio">
+                                    <p class="label-text">Скидка</p>
+                                </label>
+                            </div>
+    
+                            <div class="btn-quiz">
+                                <button class="btn-back">Назад</button>
+                                <button class="btn-general">Далее</button>
+                            </div>
+    
+                            <div class="quiz-active">
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element quiz-active-element__big"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+    
+                            </div>
+                        </form>
+                        <img class="quiz-img-1 position-absolute" src="img/quiz-6.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content-quiz" style="display: none;">
+                <div class="container">
+                    <div
+                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
+    
+                        <form class="form-block" action="">
+                            <p class="form-text">Хорошо. Заполните Ваши контакты и получите <br class="">
+                                стоимость визы + бонус!</p>
+    
+                            <div class="input-quiz">
+                                <input class="form-input" placeholder="Ваше имя" type="text">
+                                <input class="form-input" placeholder="Телефон" type="tel">
+                            </div>
+                            <div class="btn-quiz">
+                                <button class="btn-back">Назад</button>
+                                <button class="btn-general">Отправить</button>
+                            </div>
+    
+                            <div class="quiz-active">
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element quiz-active-element__big"></div>
+                                <div class="quiz-active-element"></div>
+                            </div>
+                        </form>
+                        <img class="quiz-img-1 position-absolute" src="img/quiz-7.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content-quiz" style="">
+                <div class="container">
+                    <div
+                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
+    
+                        <form class="form-block" action="">
+    
+                            <h2 class="title-last">Спасибо за заявку!</h2>
+                            <p class="last-text">В ближайшее время наш оператор <br class="d-sm-block d-none">
+                                свяжется с вами для расчета стоимости</p>
+                            <div class="quiz-active">
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element"></div>
+                                <div class="quiz-active-element quiz-active-element__big"></div>
+                            </div>
+                        </form>
+                        <img class="quiz-img-1 position-absolute" src="img/quiz-8.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <img class="cloud w-100 d-sm-block d-none position-absolute" src="img/cloud.png" alt="">
+            <img class="cloud w-100 d-sm-none d-block position-absolute" src="../img/cloud-mob.png" alt="">
+        </div>
+    
+        <div class="footer position-relative">
+            <div class="container">
+                <div
+                    class="footer-block d-flex align-items-center justify-content-lg-between justify-content-start flex-lg-row flex-wrap">
+                    <div class="footer-element d-flex align-items-center">
+                        <img class="footer-img" src="img/bot-nav-1.png" alt="">
+                        <p class="footer-text">Без отказа</p>
+                    </div>
+                    <div class="footer-element d-flex align-items-center">
+                        <img class="footer-img" src="img/bot-nav-2.png" alt="">
+                        <p class="footer-text">Подготовка пакета <br> документов</p>
+                    </div>
+                    <div class="footer-element d-flex align-items-center">
+                        <img class="footer-img" src="img/bot-nav-3.png" alt="">
+                        <p class="footer-text">Быстрое оформление</p>
+                    </div>
+                    <div class="footer-element d-flex align-items-center">
+                        <img class="footer-img" src="img/bot-nav-4.png" alt="">
+                        <p class="footer-text">Полное сопровождение</p>
+                    </div>
+                    <div class="footer-element d-flex align-items-center">
+                        <img class="footer-img" src="img/bot-nav-5.png" alt="">
+                        <p class="footer-text">Без справок и <br> очередей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

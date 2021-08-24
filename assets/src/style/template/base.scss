@@ -1,0 +1,145 @@
+/* base */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+html,
+body {
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Gilroy-Regular";
+    font-weight: normal;
+    color: #000000;
+    background-color: #ffffff;
+}
+body {
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    body {
+        overflow: inherit;
+    }
+}
+
+a,
+a:hover {
+    cursor: pointer !important;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+input,
+button {
+    font-family: "Gilroy-Regular";
+    font-weight: normal;
+    border: none;
+    outline: none;
+    cursor: pointer !important;
+}
+
+input:hover,
+button:hover {
+    cursor: pointer !important;
+    border: 0;
+    outline: none;
+}
+
+input:focus,
+button:focus {
+    cursor: pointer !important;
+    box-shadow: none !important;
+    border: none;
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1520px;
+    padding: 0 10px 0 10px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 992px;
+        padding: 0 15px 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 576px;
+        padding: 0 20px 0 20px;
+    }
+}
+// fonts
+
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("../fonts/gilroy/gilroy-regular.eot"); /* IE 9 Compatibility Mode */
+    src: url("../fonts/gilroy/gilroy-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE < 9 */ url("../fonts/gilroy/gilroy-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("../fonts/gilroy/gilroy-regular.woff") format("woff"),
+        /* Firefox >= 3.6, any other modern browser */ url("../fonts/gilroy-regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */ url("../fonts/gilroy/gilroy-regular.svg#gilroy-regular") format("svg"); /* Chrome < 4, Legacy iOS */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("../fonts/gilroy/gilroy-bold.eot"); /* IE 9 Compatibility Mode */
+    src: url("../fonts/gilroy/gilroy-bold.eot?#iefix") format("embedded-opentype"),
+        /* IE < 9 */ url("../fonts/gilroy/gilroy-bold.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("../fonts/gilroy/gilroy-bold.woff") format("woff"),
+        /* Firefox >= 3.6, any other modern browser */ url("../fonts/gilroy/gilroy-bold.ttf") format("truetype"),
+        /* Safari, Android, iOS */ url("../fonts/gilroy/gilroy-bold.svg#gilroy-bold") format("svg"); /* Chrome < 4, Legacy iOS */
+    font-weight: 900;
+}
+// fonts
+/* base */
