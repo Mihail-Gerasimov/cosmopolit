@@ -9,13 +9,20 @@
     <!-- foonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
     <!-- font-family: 'Montserrat', sans-serif; -->
+    <!-- font-family: 'Roboto', sans-serif; -->
     <!-- foonts -->
+
+    <!-- swiper -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
+    <!-- swiper -->
 
     <link rel="stylesheet" href="css/main.min.css">
 
-    <title>Визовый центр КОСМОПОЛИТ</title>
+    <title>КУПИ ЛИД</title>
 </head>
 
 <body>
@@ -24,473 +31,415 @@
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header position-relative d-flex justify-content-center align-items-center flex-column">
-                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                    <h1 class="title-medium title-modal mt-5 mb-3">Оформите заявку</h1>
-                    <p class="modal-text text-dark text-center mb-4">Для сотрудничества с нами
-                        оставьте свои данные.</p>
+                <div class="modal-header border-0 d-flex flex-column align-items-start">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     
-                    <form action="">
-                        <input class="modal-input mb-2 text-center" type="text" placeholder="Ваше имя">
-                        <input class="modal-input mb-2 text-center" type="tel" placeholder="Телефон">
-                        <button class="btn-general btn-modal mb-2">Подать заявку</button>
-                        <p class="modal-info text-dark text-center mb-4">Нажимая кнопку “Заполнить заявку” вы соглашаетесь
-                            с Политикой конфеденциальности нашей компании</p>
-                    </form>
+                    <div class="modal-block position-relative d-block">
+                        <h2 class="h1 title-modal mb-1">Хочу лиды!</h2>
+                        <p class="modal-text">Для получения лидов, оставьте номер телефона и ваше имя. Наш менеджер
+                            расскажет вам все подробнее.</p>
+    
+                        <form action="" class="form-modal">
+                            <input class="modal-input" placeholder="Ваше Имя" type="text">
+                            <input class="modal-input" placeholder="+7 (___) ___ - __ - __" type="tel">
+    
+                            <label class="label-radio">
+                                <input type="checkbox" name="people-number " class="real-radio ">
+                                <div class="custom-radio"><img src="img/0-modal/check-modal.svg" alt=""></div>
+                                <p class="custom-radio--text">Согласие на обработку своих <br> персональных данных</p>
+                            </label>
+    
+                            <button class="btn-general btn-modal">Хочу лиды!</button>
+    
+                        </form>
+                    </div>
+                    <img class="modal-img position-absolute d-lg-block d-none" src="img/0-modal/modal-run.png" alt="">
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="modal-thanks d-flex justify-content-center flex-column align-items-center"
-        style="display: none !important;">
-        <div class="modal-block h-100 w-100 d-flex justify-content-center align-items-center flex-column position-relative">
-            <img class="closed position-absolute" src="img/closed.png" alt="">
-            <img class="complite mt-5" src="img/complite.png" alt="">
-            <h1 class="title-medium text-center title-modal mt-3 mb-3">Заявка <br> отправлена!</h1>
-            <p class="modal-text text-dark text-center mb-5">Наш менеджер свяжется
-                с вами в ближайшее время</p>
+    
+    <div class="modal-thanks" style="display: none;">
+        <div class="modal-content d-flex flex-column justify-content-center align-items-center h-100 position-relative">
+            <img class="modal-picture mb-2" src="img/0-modal/check-thanks.png" alt="">
+            <h2 class="title-modal text-center mb-5">Заявка <br>
+                отправлена</h2>
+            <p class="modal-text">Мы получили вашу заявку. <br> Наш менеджер свяжится с вами.</p>
+            <img src="img/0-modal/closed.png" class="closed position-absolute">
         </div>
     </div>
     
     <!-- data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop" -->
-    <section class="general">
+    <section class="header position-relative overflow-hidden">
+        <img class="bg-header position-absolute d-sm-block d-none" src="img/1-header/background-header.png" alt="">
+        <img class="bg-header-mob position-absolute d-sm-none d-block" src="img/1-header/background-header-mobile.png"
+            alt="">
+        <div class="container">
+            <img class="h-nav-logo mt-4" src="img/1-header/h-nav-logo.png" alt="">
     
-        <div class="navigation">
-            <div class="container">
-                <div
-                    class="navigation-block d-flex align-items-center justify-content-md-between justify-content-center flex-md-row flex-column">
-                    <img class="logo" src="img/logo.png" alt="">
-                    <p class="nav-text text-center mb-md-0 mb-3">Визовый центр в СПБ <br>
-                        Оформление виз в любую страну от 2300 руб за 3 дня</p>
-                    <div class="button-fast d-flex flex-column align-items-center">
-                        <p class="btn-text mb-2">Не хочу ничего заполнять</p>
-                        <button class="btn-nav" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Дайте визу</button>
-                    </div>
+            <div class="header-main d-flex justify-content-between">
+                <div class="header-information mt-4 mt-md-5 me-0 me-sm-3 me-md-4 col-sm-6 col-12">
+                    <h1 class="header-title mb-3">Нужны
+                        <span>качественные лиды</span>
+                        на банкротство?
+                    </h1>
+                    <p class="header-text mb-5">Нам есть, что вам предложить на индивидуальных условиях.
+                        Заявка всего от 300-х рублей!</p>
+                    <img class="header-phone-mob d-sm-none d-block mb-3 mx-auto" src="img/1-header/header-phone-mob.png"
+                        alt="">
+                    <button class="btn-general header-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Хочу
+                        лиды!</button>
                 </div>
+    
+                <img class="header-phone col-6 d-sm-block d-none" src="img/1-header/header-phone.png" alt="">
             </div>
         </div>
-    
-        <div class="content position-relative">
-    
-            <div class="content-quiz" style="display: none;">
-                <div class="container">
-                    <div
-                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
-    
-                        <h1 class="title-medium">Рассчитать стоимость <br>
-                            СО СКИДКОЙ</h1>
-    
-                        <form class="form-block" action="">
-                            <p class="form-text">Выберите страну</p>
-    
-                            <div class="select-block">
-                                <select class="select-general" name="" id="">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-    
-                                <div class="select is-active">
-    
-                                    <div class="select__header">
-                                        <span class="select__current text-decoration-underline">Весь мир</span>
-                                        <div class="select__icon"><img src="img/figure.png" alt=""></div>
-                                    </div>
-    
-                                    <div class="select__body">
-                                        <div class="select__item d-flex align-items-center col-5">
-                                            <img class="select__item--img" src="img/side-1.png" alt="">
-                                            <p class="select__item--text ms-2">Болгария</p>
-                                        </div>
-                                        <div class="select__item d-flex align-items-center col-5">
-                                            <img class="select__item--img" src="img/side-2.png" alt="">
-                                            <p class="select__item--text ms-2">Испания</p>
-                                        </div>
-                                        <div class="select__item d-flex align-items-center col-5">
-                                            <img class="select__item--img" src="img/side-3.png" alt="">
-                                            <p class="select__item--text ms-2">Польша</p>
-                                        </div>
-                                        <div class="select__item d-flex align-items-center col-5">
-                                            <img class="select__item--img" src="img/side-4.png" alt="">
-                                            <p class="select__item--text ms-2">Эстония</p>
-                                        </div>
-                                        <div class="select__item d-flex align-items-center col-7">
-                                            <img class="select__item--img" src="img/side-5.png" alt="">
-                                            <p class="select__item--text ms-2">Греция</p>
-                                        </div>
-                                        <div class="select__item d-flex align-items-center col-7">
-                                            <img class="select__item--img" src="img/side-6.png" alt="">
-                                            <p class="select__item--text ms-2">Италия</p>
-                                        </div>
-                                        <div class="select__item d-flex align-items-center col-7">
-                                            <img class="select__item--img" src="img/side-7.png" alt="">
-                                            <p class="select__item--text ms-2">Хорватия</p>
-                                        </div>
-                                    </div>
-                                </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages-main">
+                <h2 class="title-medium title-advantages">Преимущества</h2>
+                <div class="advantages-content">
+                    <div class="advantages-content__line d-flex">
+                        <div
+                            class="advantages-content__line--element position-relative d-flex flex-column justify-content-end mb-4 mb-md-5">
+                            <div class="advantages__line--element--top d-flex align-items-center">
+                                <img src="img/3-advantages/ad-1.svg" alt="">
+                                <p class="advantages__line--top--text">Формируем до 2000 <br> лидов в день</p>
                             </div>
-    
-                            <div class="btn-quiz btn-quiz-1">
-                                <button class="btn-general">Далее</button>
+                            <p class="advantages__line--bottom--text">Проводим работу с городами РФ
+                                и приводим от 10 до 100 заявок
+                                в зависимости о региона</p>
+                            <span class="abs-element-under position-absolute">01</span>
+                        </div>
+                        <div
+                            class="advantages-content__line--element position-relative d-flex flex-column justify-content-end mb-4 mb-md-5">
+                            <div class="advantages__line--element--top d-flex align-items-center">
+                                <img src="img/3-advantages/ad-2.svg" alt="">
+                                <p class="advantages__line--top--text">Работаем с CRM <br> системой</p>
                             </div>
-    
-                            <div class="quiz-active">
-                                <div class="quiz-active-element quiz-active-element__big"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-    
+                            <p class="advantages__line--bottom--text">Клиентов мы подключаем
+                                к собственной CRM системе.
+                                Прием лидов в реальном времени </p>
+                            <span class="abs-element-under position-absolute">02</span>
+                        </div>
+                        <div
+                            class="advantages-content__line--element position-relative d-flex flex-column justify-content-end mb-4 mb-md-5">
+                            <div class="advantages__line--element--top d-flex align-items-center">
+                                <img src="img/3-advantages/ad-3.svg" alt="">
+                                <p class="advantages__line--top--text">Мы работаем со <br> своими сайтами</p>
                             </div>
-                        </form>
-                        <img class="quiz-img-1 position-absolute" src="img/quiz-1.png" alt="">
+                            <p class="advantages__line--bottom--text">Мы располагаем готовыми ресурсами, от вас потребуется
+                                только номер телефона и почта для связи</p>
+                            <span class="abs-element-under position-absolute">03</span>
+                        </div>
                     </div>
-                </div>
-            </div>
-    
-            <div class="content-quiz" style="display: none;">
-                <div class="container">
-                    <div
-                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
-    
-                        <form class="form-block" action="">
-                            <p class="form-text">Цель вашей поездки?</p>
-    
-                            <div class="select-block">
-                                <select class="select-general" name="" id="">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-    
-                                <div class="select is-active">
-    
-                                    <div class="select__header">
-                                        <span class="select__current text-decoration-underline">Выберите цель</span>
-                                        <div class="select__icon"><img src="img/figure.png" alt=""></div>
-                                    </div>
-    
-                                    <div class="select__body">
-                                        <div class="select__item d-flex align-items-center col-6">
-                                            <img class="select__item--img select__item--img-2" src="img/goal-1.png" alt="">
-                                            <p class="select__item--text ms-2">Туристическая</p>
-                                        </div>
-                                        <div class="select__item d-flex align-items-center col-6">
-                                            <img class="select__item--img select__item--img-2" src="img/goal-2.png" alt="">
-                                            <p class="select__item--text ms-2">Гостевая</p>
-                                        </div>
-                                        <div class="select__item d-flex align-items-center col-6">
-                                            <img class="select__item--img select__item--img-2" src="img/goal-3.png" alt="">
-                                            <p class="select__item--text ms-2">Рабочая/Деловая</p>
-                                        </div>
-                                        <div class="select__item d-flex align-items-center col-6">
-                                            <img class="select__item--img select__item--img-2" src="img/goal-4.png" alt="">
-                                            <p class="select__item--text ms-2">Транзитная</p>
-                                        </div>
-                                        <div class="select__item d-flex align-items-center col-6">
-                                            <img class="select__item--img select__item--img-2" src="img/goal-5.png" alt="">
-                                            <p class="select__item--text ms-2">Переезд на ПМЖ</p>
-                                        </div>
-                                        <div class="select__item d-flex align-items-center col-6">
-                                            <img class="select__item--img select__item--img-2" src="img/goal-6.png" alt="">
-                                            <p class="select__item--text ms-2">Студенческая</p>
-                                        </div>
-                                        <div class="select__item d-flex align-items-center col-6">
-                                            <img class="select__item--img select__item--img-2" src="img/goal-7.png" alt="">
-                                            <p class="select__item--text ms-2">Другая</p>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="advantages-content__line d-flex">
+                        <div
+                            class="advantages-content__line--element position-relative d-flex flex-column justify-content-end mb-4 mb-md-5">
+                            <div class="advantages__line--element--top d-flex align-items-center">
+                                <img src="img/3-advantages/ad-4.svg" alt="">
+                                <p class="advantages__line--top--text">Заявки для крупных <br> регионов - от 300 руб.</p>
                             </div>
-    
-                            <div class="btn-quiz btn-quiz-1">
-                                <button class="btn-general">Далее</button>
+                            <p class="advantages__line--bottom--text">Наши лиды приносят заказчикам
+                                до 30% встреч и переговоров от общего количества лидов</p>
+                            <span class="abs-element-under position-absolute">04</span>
+                        </div>
+                        <div
+                            class="advantages-content__line--element position-relative d-flex flex-column justify-content-end mb-4 mb-md-5">
+                            <div class="advantages__line--element--top d-flex align-items-center">
+                                <img src="img/3-advantages/ad-5.svg" alt="">
+                                <p class="advantages__line--top--text">Генерируем лиды по <br> всем регионам РФ</p>
                             </div>
-    
-                            <div class="quiz-active">
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element quiz-active-element__big"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-    
-                            </div>
-                        </form>
-                        <img class="quiz-img-1 position-absolute" src="img/quiz-2.png" alt="">
-                    </div>
-                </div>
-            </div>
-    
-            <div class="content-quiz" style="display: none;">
-                <div class="container">
-                    <div
-                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
-    
-                        <form class="form-block" action="">
-                            <p class="form-text">Открывали вы ранее визы?</p>
-    
-                            <div class="label d-flex">
-                                <label class="label-quiz" for="name">
-                                    <input class="label-input position-absolute" name="name" type="radio">
-                                    <p class="label-text">Да</p>
-                                </label>
-    
-                                <label class="label-quiz" for="name">
-                                    <input class="label-input position-absolute" name="name" type="radio">
-                                    <p class="label-text">Нет</p>
-                                </label>
-                            </div>
-    
-                            <div class="btn-quiz">
-                                <button class="btn-back">Назад</button>
-                                <button class="btn-general">Далее</button>
-                            </div>
-    
-                            <div class="quiz-active">
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element quiz-active-element__big"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-    
-                            </div>
-                        </form>
-                        <img class="quiz-img-1 position-absolute" src="img/quiz-3.png" alt="">
-                    </div>
-                </div>
-            </div>
-    
-            <div class="content-quiz" style="display: none;">
-                <div class="container">
-                    <div
-                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
-    
-                        <form class="form-block" action="">
-                            <p class="form-text">Купили авиабилеты?</p>
-    
-                            <div class="label d-flex">
-                                <label class="label-quiz" for="name">
-                                    <input class="label-input position-absolute" name="name" type="radio">
-                                    <p class="label-text">Да</p>
-                                </label>
-    
-                                <label class="label-quiz" for="name">
-                                    <input class="label-input position-absolute" name="name" type="radio">
-                                    <p class="label-text">Нет</p>
-                                </label>
-                            </div>
-    
-                            <div class="btn-quiz">
-                                <button class="btn-back">Назад</button>
-                                <button class="btn-general">Далее</button>
-                            </div>
-    
-                            <div class="quiz-active">
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element quiz-active-element__big"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-    
-                            </div>
-                        </form>
-                        <img class="quiz-img-1 position-absolute" src="img/quiz-4.png" alt="">
-                    </div>
-                </div>
-            </div>
-    
-            <div class="content-quiz" style="display: none;">
-                <div class="container">
-                    <div
-                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
-    
-                        <form class="form-block" action="">
-                            <p class="form-text">Забронировали отель?</p>
-    
-                            <div class="label d-flex">
-                                <label class="label-quiz" for="name">
-                                    <input class="label-input position-absolute" name="name" type="radio">
-                                    <p class="label-text">Да</p>
-                                </label>
-    
-                                <label class="label-quiz" for="name">
-                                    <input class="label-input position-absolute" name="name" type="radio">
-                                    <p class="label-text">Нет</p>
-                                </label>
-                            </div>
-    
-                            <div class="btn-quiz">
-                                <button class="btn-back">Назад</button>
-                                <button class="btn-general">Далее</button>
-                            </div>
-    
-                            <div class="quiz-active">
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element quiz-active-element__big"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-    
-                            </div>
-                        </form>
-                        <img class="quiz-img-1 position-absolute" src="img/quiz-5.png" alt="">
-                    </div>
-                </div>
-            </div>
-    
-            <div class="content-quiz" style="display: none;">
-                <div class="container">
-                    <div
-                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
-    
-                        <form class="form-block" action="">
-                            <p class="form-text">Какой бонус хотите получить?</p>
-    
-                            <div class="label d-flex">
-                                <label class="label-quiz" for="name">
-                                    <input class="label-input position-absolute" name="name" type="radio">
-                                    <p class="label-text">Подарок</p>
-                                </label>
-    
-                                <label class="label-quiz" for="name">
-                                    <input class="label-input position-absolute" name="name" type="radio">
-                                    <p class="label-text">Скидка</p>
-                                </label>
-                            </div>
-    
-                            <div class="btn-quiz">
-                                <button class="btn-back">Назад</button>
-                                <button class="btn-general">Далее</button>
-                            </div>
-    
-                            <div class="quiz-active">
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element quiz-active-element__big"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-    
-                            </div>
-                        </form>
-                        <img class="quiz-img-1 position-absolute" src="img/quiz-6.png" alt="">
-                    </div>
-                </div>
-            </div>
-    
-            <div class="content-quiz" style="display: none;">
-                <div class="container">
-                    <div
-                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
-    
-                        <form class="form-block" action="">
-                            <p class="form-text">Хорошо. Заполните Ваши контакты и получите <br class="">
-                                стоимость визы + бонус!</p>
-    
-                            <div class="input-quiz">
-                                <input class="form-input" placeholder="Ваше имя" type="text">
-                                <input class="form-input" placeholder="Телефон" type="tel">
-                            </div>
-                            <div class="btn-quiz">
-                                <button class="btn-back">Назад</button>
-                                <button class="btn-general">Отправить</button>
-                            </div>
-    
-                            <div class="quiz-active">
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element quiz-active-element__big"></div>
-                                <div class="quiz-active-element"></div>
-                            </div>
-                        </form>
-                        <img class="quiz-img-1 position-absolute" src="img/quiz-7.png" alt="">
-                    </div>
-                </div>
-            </div>
-    
-            <div class="content-quiz" style="">
-                <div class="container">
-                    <div
-                        class="content-block position-relative mx-auto d-flex flex-column justify-content-center align-items-center">
-    
-                        <form class="form-block" action="">
-    
-                            <h2 class="title-last">Спасибо за заявку!</h2>
-                            <p class="last-text">В ближайшее время наш оператор <br class="d-sm-block d-none">
-                                свяжется с вами для расчета стоимости</p>
-                            <div class="quiz-active">
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element"></div>
-                                <div class="quiz-active-element quiz-active-element__big"></div>
-                            </div>
-                        </form>
-                        <img class="quiz-img-1 position-absolute" src="img/quiz-8.png" alt="">
-                    </div>
-                </div>
-            </div>
-    
-            <img class="cloud w-100 d-sm-block d-none position-absolute" src="img/cloud.png" alt="">
-            <img class="cloud w-100 d-sm-none d-block position-absolute" src="img/cloud-mob.png" alt="">
-        </div>
-    
-        <div class="footer position-relative">
-            <div class="container">
-                <div
-                    class="footer-block d-flex align-items-center justify-content-lg-between justify-content-start flex-lg-row flex-wrap">
-                    <div class="footer-element d-flex align-items-center">
-                        <img class="footer-img" src="img/bot-nav-1.png" alt="">
-                        <p class="footer-text">Без отказа</p>
-                    </div>
-                    <div class="footer-element d-flex align-items-center">
-                        <img class="footer-img" src="img/bot-nav-2.png" alt="">
-                        <p class="footer-text">Подготовка пакета <br> документов</p>
-                    </div>
-                    <div class="footer-element d-flex align-items-center">
-                        <img class="footer-img" src="img/bot-nav-3.png" alt="">
-                        <p class="footer-text">Быстрое оформление</p>
-                    </div>
-                    <div class="footer-element d-flex align-items-center">
-                        <img class="footer-img" src="img/bot-nav-4.png" alt="">
-                        <p class="footer-text">Полное сопровождение</p>
-                    </div>
-                    <div class="footer-element d-flex align-items-center">
-                        <img class="footer-img" src="img/bot-nav-5.png" alt="">
-                        <p class="footer-text">Без справок и <br> очередей</p>
+                            <p class="advantages__line--bottom--text">Мы задействуем все регионы России для <br> генерации
+                                лидов
+                            </p>
+                            <span class="abs-element-under position-absolute">05</span>
+                        </div>
+                        <div
+                            class="advantages-content__line--element position-relative d-flex justify-content-center align-items-center">
+                            <button class="btn-general btn-advantages" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Лиды на тест</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <section class="about-us">
+        <div class="container">
+            <div class="about-us-main">
+                <h3 class="title-medium title-about-us">О нас</h3>
+                <div
+                    class="about-us-content d-flex justify-content-start justify-content-sm-between flex-column-reverse flex-sm-row ">
+                    <img class="about-peoples h-100 col-12 col-sm-6" src="img/4-about-us/about-peoples.png" alt="">
+                    <p class="about-us-information col-12 col-sm-6 pt-0 pt-lg-4 mb-4 mb-sm-0">Наша компания уже более 2-х
+                        лет работает
+                        в
+                        сфере
+                        банкротства
+                        по
+                        всем
+                        регионам России.
+                        Мы сотрудничаем с уже более 50-ти компаниями-партнерами. Генерация лидов по банкротству дает
+                        возможность нашей компании выделяться среди конкурентов, ведь мы окупаем вложения в рекламу и
+                        повышаем лидогенерацию на качество. Специалисты нашей компании помогают генерировать качественные
+                        лиды и приводить именно тех потенциальных клиентов, которые готовы законно списывать долги.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cases">
+        <div class="container">
+            <div class="cases-main">
+                <h4 class="title-medium title-desctop-cases">Наши кейсы</h4>
+    
+                <!-- Slider main container -->
+                <div class="swiper swiper-cases">
+                    <h4 class="title-medium title-cases text-center">Наши кейсы</h4>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+    
+                        <div class="swiper-slide slide-cases">
+                            <div class="slide-cases-block d-flex">
+                                <div
+                                    class="slide-cases-block__blue d-flex flex-column justify-content-center align-items-center me-2 me-lg-3">
+                                    <img class="mb-3" src="img/5-cases/case-1.png" alt="">
+                                    <p class="slide-blue-text">Ростов-на-Дону</p>
+                                </div>
+                                <div class="slide-cases__description my-auto">
+                                    <h5 class="title-slide mb-3">г. Ростов-на-Дону</h5>
+                                    <div class="slides-cases__number d-flex align-items-center mb-3">
+                                        <h5 class="title-slide__description me-2">411</h5>
+                                        <p class="slide__description--text">заявок в<br> месяц</p>
+                                    </div>
+                                    <div class="slides-cases__number d-flex align-items-center">
+                                        <h5 class="title-slide__description me-2">42</h5>
+                                        <p class="slide__description--text">договора на <br> банкротство <br>
+                                            по 150 000 руб</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide slide-cases">
+                            <div class="slide-cases-block d-flex">
+                                <div
+                                    class="slide-cases-block__blue d-flex flex-column justify-content-center align-items-center me-2 me-lg-3">
+                                    <img class="mb-3" src="img/5-cases/case-2.png" alt="">
+                                    <p class="slide-blue-text">Москва</p>
+                                </div>
+                                <div class="slide-cases__description my-auto">
+                                    <h5 class="title-slide mb-3">г. Москва</h5>
+                                    <div class="slides-cases__number d-flex align-items-center mb-3">
+                                        <h5 class="title-slide__description me-2">823</h5>
+                                        <p class="slide__description--text">заявок в<br> месяц</p>
+                                    </div>
+                                    <div class="slides-cases__number d-flex align-items-center">
+                                        <h5 class="title-slide__description me-2">79</h5>
+                                        <p class="slide__description--text">договора на <br> банкротство <br>
+                                            по 150 000 руб</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide slide-cases">
+                            <div class="slide-cases-block d-flex">
+                                <div
+                                    class="slide-cases-block__blue d-flex flex-column justify-content-center align-items-center me-2 me-lg-3">
+                                    <img class="mb-3" src="img/5-cases/case-2.png" alt="">
+                                    <p class="slide-blue-text">Санкт-Петербург</p>
+                                </div>
+                                <div class="slide-cases__description my-auto">
+                                    <h5 class="title-slide mb-3">г. Санкт-Петербург</h5>
+                                    <div class="slides-cases__number d-flex align-items-center mb-3">
+                                        <h5 class="title-slide__description me-2">602</h5>
+                                        <p class="slide__description--text">заявок в<br> месяц</p>
+                                    </div>
+                                    <div class="slides-cases__number d-flex align-items-center">
+                                        <h5 class="title-slide__description me-2">54</h5>
+                                        <p class="slide__description--text">договора на <br> банкротство <br>
+                                            по 150 000 руб</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="prev-slide">
+                        <img src="img/5-cases/prev-ar.png" alt="">
+                    </div>
+                    <div class="next-slide">
+                        <img src="img/5-cases/next-ar.png" alt="">
+                    </div>
+                </div>
+    
+                <div class="cases-mobile">
+                    <div class="cases-mobile-block mb-4">
+                        <h5 class="title-slide mb-3">г. Ростов-на-Дону</h5>
+    
+                        <div class="slides-cases__number  mb-3">
+                            <h5 class="title-slide__description mb-1">411</h5>
+                            <p class="slide__description--text">заявок в месяц</p>
+                        </div>
+                        <div class="slides-cases__number mb-3">
+                            <h5 class="title-slide__description mb-1">42</h5>
+                            <p class="slide__description--text">договора на банкротство <br>
+                                по 150 000 руб</p>
+                        </div>
+                        <div class="slide-cases-block__blue d-flex flex-column justify-content-center align-items-center">
+                            <img class=" mb-1" src="img/5-cases/case-1.png" alt="">
+                            <p class="slide-blue-text">Ростов-на-Дону</p>
+                        </div>
+                    </div>
+    
+                    <div class="cases-mobile-block mb-4">
+                        <h5 class="title-slide mb-3">г. Москва</h5>
+    
+                        <div class="slides-cases__number  mb-3">
+                            <h5 class="title-slide__description mb-1">823</h5>
+                            <p class="slide__description--text">заявок в месяц</p>
+                        </div>
+                        <div class="slides-cases__number mb-3">
+                            <h5 class="title-slide__description mb-1">79</h5>
+                            <p class="slide__description--text">договора на банкротство <br>
+                                по 150 000 руб</p>
+                        </div>
+                        <div class="slide-cases-block__blue d-flex flex-column justify-content-center align-items-center">
+                            <img class=" mb-1" src="img/5-cases/case-1.png" alt="">
+                            <p class="slide-blue-text">Москва</p>
+                        </div>
+                    </div>
+    
+                    <div class="cases-mobile-block">
+                        <h5 class="title-slide mb-3">г. Санкт-Петербург</h5>
+    
+                        <div class="slides-cases__number  mb-3">
+                            <h5 class="title-slide__description mb-1">602</h5>
+                            <p class="slide__description--text">заявок в месяц</p>
+                        </div>
+                        <div class="slides-cases__number mb-3">
+                            <h5 class="title-slide__description mb-1">54</h5>
+                            <p class="slide__description--text">договора на банкротство <br>
+                                по 150 000 руб</p>
+                        </div>
+                        <div class="slide-cases-block__blue d-flex flex-column justify-content-center align-items-center">
+                            <img class=" mb-1" src="img/5-cases/case-1.png" alt="">
+                            <p class="slide-blue-text">Санкт-Петербург</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="working">
+        <div class="container">
+            <div class="working-main">
+                <h3 class="title-medium title-working">Как мы проводим <br> работу</h3>
+                <div class="row p-0 justify-content-lg-start justify-content-center">
+                    <div
+                        class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5 d-flex flex-column justify-content-start align-items-center">
+                        <img class="working-picture mb-1" src="img/6-working/w-1.png" alt="">
+                        <h5 class="title-woking-element mb-3">Специалисты <br>
+                            приступают к работе</h5>
+                        <p class="information-working-element">Мы настраиваем генерацию лидов в зависимости от вашего
+                            города, запускаем аналитику</p>
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5 d-flex flex-column justify-content-start align-items-center">
+                        <img class="working-picture mb-1" src="img/6-working/w-2.png" alt="">
+                        <h5 class="title-woking-element mb-3">Запускаем CRM <br>
+                            систему в работу</h5>
+                        <p class="information-working-element">Вводим CRM систему и предоставляем доступ клиенту, проводится
+                            инструктаж по работе с системой</p>
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5 d-flex flex-column justify-content-start align-items-center">
+                        <img class="working-picture mb-1" src="img/6-working/w-3.png" alt="">
+                        <h5 class="title-woking-element mb-3">Настройка рекламной <br> кампании</h5>
+                        <p class="information-working-element">Настраиваем рекламные площадки Яндекс Директ, Google Adwords,
+                            Facebook и Instagram в зависимости от Вашего ГЕО работы</p>
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5 d-flex flex-column justify-content-start align-items-center">
+                        <img class="working-picture mb-1" src="img/6-working/w-4.png" alt="">
+                        <h5 class="title-woking-element mb-3">Подключаем <br> трафик</h5>
+                        <p class="information-working-element">Мы запускаем в работу трафик, автоматически идут заявки</p>
+                    </div>
+                </div>
+                <button class="btn-general btn-working d-block mx-auto" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Лиды на тест</button>
+            </div>
+        </div>
+    </section>
+    <section class="leads">
+        <div class="container">
+            <div class="leads-main">
+                <h4 class="title-medium text-center mb-5">Получить качественные <br> лиды</h4>
+                <div class="row p-0 d-flex align-items-center align-items-xxl-start">
+                    <div class="col-12 col-sm-6">
+                        <p class="text-form mb-5">Заполните анкеты и наши специалисты свяжутся с вами </p>
+                        <form class="form-leads" action="">
+                            <div class="form-leads-line mb-3">
+                                <p class="form-leads-line__title mb-2 mb-md-3">Ваше Имя</p>
+                                <input class="input-leads" placeholder="Ваше имя" type="text">
+                            </div>
+                            <div class="form-leads-line mb-3">
+                                <p class="form-leads-line__title mb-2 mb-md-3">Ваш номер</p>
+                                <input class="input-leads" placeholder="Ваш номер" type="tel">
+                            </div>
+                            <div class="form-leads-line mb-4 mb-md-5">
+                                <p class="form-leads-line__title mb-2 mb-md-3">Ваша ниша</p>
+                                <input class="input-leads" placeholder="На какую нишу хотите лиды?" type="text">
+                            </div>
+                            <button class="btn-general btn-leads" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="col-6 d-sm-block d-none">
+                        <img src="img/7-leads/leads-phone.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="thanks">
+        <div class="container">
+            <div
+                class="thanks-main d-flex align-items-start align-items-md-center justify-content-between flex-md-row flex-column">
+                <div class="thanks-block me-0 mb-5 mb-md-0 me-md-4 ps-0 ps-xl-5">
+                    <h5 class="title-medium mb-5">Спасибо <br>
+                        за внимание!</h5>
+                    <p class="thanks-text">Просто свяжитесь с нами удобным для Вас
+                        способом, и наш менеджер с удовольствием
+                        ответит на ваши вопросы.</p>
+                </div>
+                <div class="thanks-block pe-0 pe-xl-5 mx-auto mx-md-0">
+                    <div class="thanks-card d-flex flex-column justify-content-center align-items-center px-4">
+                        <img class="mb-2" src="img//8-thanks/thanks.png" alt="">
+                        <p class="thanks-card__important mb-3">Важно</p>
+                        <p class="thanks-card__text">Мы берем <b>только одного партнера</b> в вашем регионе
+                            и <b>не работаем с конкурентами</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="footer-main py-3 py-md-4">
+                <p class="footer-text text-center w-100">Все права защищены. Мы используем политику <br
+                        class="d-none d-md-block"> конфиденциальности
+                </p>
+            </div>
+        </div>
+    </section>
 
     <script src="js/main.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
 </body>
 
 </html>

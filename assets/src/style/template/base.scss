@@ -15,20 +15,11 @@ body {
     line-height: normal;
     margin: 0;
     padding: 0;
-    font-size: 18px;
-    font-family: "Gilroy-Regular";
-    font-weight: normal;
-    color: #000000;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #142239;
     background-color: #ffffff;
-}
-body {
-    overflow: hidden;
-}
-
-@media (max-width: 992px) {
-    body {
-        overflow: inherit;
-    }
 }
 
 a,
@@ -42,6 +33,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p {
     margin: 0;
     padding: 0;
@@ -65,8 +57,8 @@ img {
 
 input,
 button {
-    font-family: "Gilroy-Regular";
-    font-weight: normal;
+    font-family: "Segoe UI Semibold";
+    font-weight: 600;
     border: none;
     outline: none;
     cursor: pointer !important;
@@ -90,7 +82,7 @@ button:focus {
 .container {
     width: 100%;
     margin: 0 auto;
-    max-width: 1520px;
+    max-width: 1560px;
     padding: 0 10px 0 10px;
 }
 
@@ -100,9 +92,9 @@ button:focus {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .container {
-        max-width: 992px;
+        max-width: 991px;
         padding: 0 15px 0 15px;
     }
 }
@@ -113,33 +105,14 @@ button:focus {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .container {
-        max-width: 576px;
+        max-width: 575px;
         padding: 0 20px 0 20px;
     }
 }
-// fonts
 
-@font-face {
-    font-family: "Gilroy-Regular";
-    src: url("../fonts/gilroy/gilroy-regular.eot"); /* IE 9 Compatibility Mode */
-    src: url("../fonts/gilroy/gilroy-regular.eot?#iefix") format("embedded-opentype"),
-        /* IE < 9 */ url("../fonts/gilroy/gilroy-regular.woff2") format("woff2"),
-        /* Super Modern Browsers */ url("../fonts/gilroy/gilroy-regular.woff") format("woff"),
-        /* Firefox >= 3.6, any other modern browser */ url("../fonts/gilroy-regular.ttf") format("truetype"),
-        /* Safari, Android, iOS */ url("../fonts/gilroy/gilroy-regular.svg#gilroy-regular") format("svg"); /* Chrome < 4, Legacy iOS */
-    font-weight: normal;
+.bg-blue {
+    background-color: #f4f9ff;
 }
-@font-face {
-    font-family: "Gilroy-Bold";
-    src: url("../fonts/gilroy/gilroy-bold.eot"); /* IE 9 Compatibility Mode */
-    src: url("../fonts/gilroy/gilroy-bold.eot?#iefix") format("embedded-opentype"),
-        /* IE < 9 */ url("../fonts/gilroy/gilroy-bold.woff2") format("woff2"),
-        /* Super Modern Browsers */ url("../fonts/gilroy/gilroy-bold.woff") format("woff"),
-        /* Firefox >= 3.6, any other modern browser */ url("../fonts/gilroy/gilroy-bold.ttf") format("truetype"),
-        /* Safari, Android, iOS */ url("../fonts/gilroy/gilroy-bold.svg#gilroy-bold") format("svg"); /* Chrome < 4, Legacy iOS */
-    font-weight: 900;
-}
-// fonts
 /* base */

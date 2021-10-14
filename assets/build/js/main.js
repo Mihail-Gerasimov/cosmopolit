@@ -2656,34 +2656,36 @@ return Popper;
 
 // Импортируем другие js-файлы
 
-"use strict";
+const swiper = new Swiper('.swiper-cases', {
+    // loop: true,
+    // initialSlide: 1,
+    // centeredSlides: true,
+    // slidesPerView: 3,
+    // spaceBetween: 20,
+    navigation: {
+        nextEl: '.next-slide',
+        prevEl: '.prev-slide',
+    },
 
-
-let select = function () {
-    let selectHeader = document.querySelectorAll('.select__header');
-    let selectItem = document.querySelectorAll('.select__item');
-
-    selectHeader.forEach(item => {
-        item.addEventListener('click', selectToggle)
-    });
-
-    selectItem.forEach(item => {
-        item.addEventListener('click', selectChoose)
-    });
-
-    function selectToggle() {
-        this.parentElement.classList.toggle('is-active');
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            initialSlide: 1,
+            centeredSlides: true,
+        },
+        575: {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            initialSlide: 1,
+            centeredSlides: true,
+        },
+        767: {
+            initialSlide: 1,
+            slidesPerView: 3,
+            spaceBetween: 0,
+            centeredSlides: true,
+        },
     }
-
-    function selectChoose() {
-        let text = this.innerText,
-            select = this.closest('.select'),
-            currentText = select.querySelector('.select__current');
-        currentText.innerText = text;
-        select.classList.remove('is-active');
-
-    }
-
-};
-
-select();
+});

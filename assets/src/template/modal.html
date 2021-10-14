@@ -2,33 +2,42 @@
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header position-relative d-flex justify-content-center align-items-center flex-column">
-                <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-                <h1 class="title-medium title-modal mt-5 mb-3">Оформите заявку</h1>
-                <p class="modal-text text-dark text-center mb-4">Для сотрудничества с нами
-                    оставьте свои данные.</p>
+            <div class="modal-header border-0 d-flex flex-column align-items-start">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-                <form action="">
-                    <input class="modal-input mb-2 text-center" type="text" placeholder="Ваше имя">
-                    <input class="modal-input mb-2 text-center" type="tel" placeholder="Телефон">
-                    <button class="btn-general btn-modal mb-2">Подать заявку</button>
-                    <p class="modal-info text-dark text-center mb-4">Нажимая кнопку “Заполнить заявку” вы соглашаетесь
-                        с Политикой конфеденциальности нашей компании</p>
-                </form>
+                <div class="modal-block position-relative d-block">
+                    <h2 class="h1 title-modal mb-1">Хочу лиды!</h2>
+                    <p class="modal-text">Для получения лидов, оставьте номер телефона и ваше имя. Наш менеджер
+                        расскажет вам все подробнее.</p>
+
+                    <form action="" class="form-modal">
+                        <input class="modal-input" placeholder="Ваше Имя" type="text">
+                        <input class="modal-input" placeholder="+7 (___) ___ - __ - __" type="tel">
+
+                        <label class="label-radio">
+                            <input type="checkbox" name="people-number " class="real-radio ">
+                            <div class="custom-radio"><img src="img/0-modal/check-modal.svg" alt=""></div>
+                            <p class="custom-radio--text">Согласие на обработку своих <br> персональных данных</p>
+                        </label>
+
+                        <button class="btn-general btn-modal">Хочу лиды!</button>
+
+                    </form>
+                </div>
+                <img class="modal-img position-absolute d-lg-block d-none" src="img/0-modal/modal-run.png" alt="">
             </div>
         </div>
     </div>
 </div>
 
-<div class="modal-thanks d-flex justify-content-center flex-column align-items-center"
-    style="display: none !important;">
-    <div class="modal-block h-100 w-100 d-flex justify-content-center align-items-center flex-column position-relative">
-        <img class="closed position-absolute" src="img/closed.png" alt="">
-        <img class="complite mt-5" src="img/complite.png" alt="">
-        <h1 class="title-medium text-center title-modal mt-3 mb-3">Заявка <br> отправлена!</h1>
-        <p class="modal-text text-dark text-center mb-5">Наш менеджер свяжется
-            с вами в ближайшее время</p>
+
+<div class="modal-thanks" style="display: none;">
+    <div class="modal-content d-flex flex-column justify-content-center align-items-center h-100 position-relative">
+        <img class="modal-picture mb-2" src="img/0-modal/check-thanks.png" alt="">
+        <h2 class="title-modal text-center mb-5">Заявка <br>
+            отправлена</h2>
+        <p class="modal-text">Мы получили вашу заявку. <br> Наш менеджер свяжится с вами.</p>
+        <img src="img/0-modal/closed.png" class="closed position-absolute">
     </div>
 </div>
 
